@@ -1,6 +1,7 @@
 # Budi's Personal Maven Repository
 
 ## Install Maven JAR
+```bash
 mvn install:install-file
  -DgroupId=[group-id]
  -DartifactId=[artifact-id]
@@ -8,6 +9,7 @@ mvn install:install-file
  -Dpackaging=[packaging-format]
  -Dfile=[path-to-file]
  -DlocalRepositoryPath=[path-to-git-repo]
+```
 
 * [group-id],[artifact-id],[version] and [packaging-format] define the Maven properties of the file to install
 * [path-to-file] is the path to the JAR file to install
@@ -19,11 +21,13 @@ Commit & push to your github repo
 Add this to projects pom.xml:
 
 ```xml
-<repository>
-    <id>git-[username]</id>
-    <name>[username]'s Git based repo</name>
-    <url>https://github.com/[username]/[repo-name]/raw/master/</url>
-</repository>
+<repositories>
+    <repository>
+        <id>git-[username]</id>
+        <name>[username]'s Git based repo</name>
+        <url>https://github.com/[username]/[repo-name]/raw/master/</url>
+    </repository>
+</repositories>
 ```
 
 [username] is your github username
