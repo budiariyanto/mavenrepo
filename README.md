@@ -15,6 +15,12 @@ mvn install:install-file
 * [path-to-file] is the path to the JAR file to install
 * [path-to-git-repo] is the path to the local Git repository on your computer
 
+Or you can use project pom file to define groupId, artifactId, groupId, version and packaging format using this command:
+
+```sh
+mvn install:install-file -Dfile=[path-to-file] -DpomFile=[path-to-pom-file] -DlocalRepositoryPath=path-to-git-repo
+```
+
 Commit & push to your github repo
 
 ## Use
