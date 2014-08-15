@@ -18,7 +18,10 @@ mvn install:install-file
 Or you can use project pom file to define groupId, artifactId, groupId, version and packaging format using this command:
 
 ```sh
-mvn install:install-file -Dfile=[path-to-file] -DpomFile=[path-to-pom-file] -DlocalRepositoryPath=path-to-git-repo
+mvn install:install-file 
+    -Dfile=[path-to-file] 
+    -DpomFile=[path-to-pom-file] 
+    -DlocalRepositoryPath=[path-to-git-repo]
 ```
 
 Commit & push to your github repo
