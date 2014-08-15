@@ -26,6 +26,8 @@ mvn install:install-file
 
 Commit & push to your github repo
 
+Documentation about maven install-file plugin can be found [here](http://maven.apache.org/plugins/maven-install-plugin/install-file-mojo.html).
+
 ## Use
 Add this to projects pom.xml:
 
